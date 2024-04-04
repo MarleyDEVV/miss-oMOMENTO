@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header container">
+            <h1>Eco</h1>
+            <h1>TECH</h1>
+        </div>
+
+        <ul>
+            <li>Objetivo</li>
+            <a href="#Clientes"><li>Clientes</li></a>
+            <a href="#Contato"><li>Contato</li></a>
+        </ul>
+    </header>
+
+    <section>
+        <div class="title"></div>
+            <h2>SOBRE</h2>
+            <span><h2>NÓS</h2></span>
+        
+
+        <p>Dedicada a desenvolver e implementar tecnologias inovadoras para resolver problemas ambientais e sociais. Nosso objetivo é criar soluções práticas e acessíveis que ajudem a proteger o planeta e melhorar a qualidade de vida das comunidades.</p>
+        </div>
+
+        <p>imagem</p>
+
+    </section>
+
+    <section id="Clientes">
+        <h1>CLIENTES IMPACTADOS</h1>
+
+        <div class="container clientes">
+            <script>
+                var conteudo = ["Maria, uma mãe solteira moradora de uma comunidade urbana densamente povoada, estava preocupada com a qualidade do ar que seus filhos estavam respirando. Ela conheceu a EcoTech Solutions quando a empresa instalou uma horta vertical em seu bairro. Com o acesso fácil a alimentos frescos e orgânicos, Maria pôde melhorar a dieta de sua família, reduzindo a necessidade de comprar produtos cultivados com pesticidas. Além disso, a vegetação das hortas ajudou a purificar o ar, tornando o ambiente mais saudável para todos na comunidade." , "João, um empresário local, estava buscando maneiras de tornar sua empresa mais sustentável e reduzir sua pegada de carbono. Ele contatou a EcoTech Solutions em busca de soluções de energia renovável. Após uma consulta, a EcoTech instalou painéis solares em seu prédio comercial, proporcionando uma fonte de energia limpa e reduzindo significativamente sua conta de eletricidade. Com essa mudança, João não apenas economizou dinheiro a longo prazo, mas também demonstrou seu compromisso com a responsabilidade ambiental, atraindo clientes que valorizam empresas ecologicamente conscientes." , "Carlos e sua família moravam em uma área rural onde a água potável era escassa e frequentemente contaminada. Após anos de dificuldades com a saúde devido ao consumo de água imprópria, eles entraram em contato com a EcoTech Solutions em busca de uma solução. A empresa instalou um sistema de filtragem de água inovador em sua comunidade, proporcionando acesso seguro e confiável à água potável. Agora, Carlos e sua família não precisam mais se preocupar com doenças relacionadas à água e podem desfrutar de uma vida mais saudável e tranquila."]
+
+                var box = document.getElementById("box")
+                for(i=0; i <3; i++){ 
+                    var div = document.createElement("div")
+                    div.className = "clinente1"; 
+                    div.textContent = conteudo[i]
+                    box.appendChild(div);
+                }
+            </script>
+        
+        </div>
+    </section>
+
+        
+    
+</body>
+</html>
