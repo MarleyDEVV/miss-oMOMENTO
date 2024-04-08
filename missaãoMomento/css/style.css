@@ -1,39 +1,10 @@
 *{
     margin: 0%;
     padding: 0%;
-    
+    scroll-behavior: smooth;
 }
 
-@media (max-width: 400px) {
-    header {
-        flex-direction: column;
-        flex-wrap: wrap;
-        min-width: 100%;
-        margin: auto;
-    }
 
-    main {
-       flex-direction: column;
-       margin: auto;
-    }
-    body{
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-
-    .imgcapa{
-        display: none;
-    }
-
-    .clientes{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-    }
-}
 
 
 body{
@@ -53,9 +24,17 @@ header{
 
 }
 
+header img{
+    height: 120px;
+}
+
 header h1{
     margin-left: 80px;
     line-height: 30px;
+}
+
+ul a{
+    color: black;
 }
 
 
@@ -163,6 +142,74 @@ aside img{
     display: flex;
     flex-direction: column;
 }
+
+/* Estilos base */
+/* Coloque seus estilos base aqui */
+
+/* Media query para telas de tamanho de iPhone e Android */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px; /* Ajuste o tamanho da fonte para dispositivos móveis */
+    }
+
+    header {
+        height: 100px; /* Reduza a altura do cabeçalho */
+    }
+
+    header img {
+        height: 80px; /* Reduza o tamanho do logo */
+    }
+
+    li {
+        margin: 15px; /* Reduza a margem entre os itens do menu */
+        font-size: 16px; /* Ajuste o tamanho da fonte do menu */
+    }
+
+    section {
+        margin: 80px 0 0 20px; /* Ajuste as margens do conteúdo */
+    }
+
+    .imgcapa{
+        display: none;
+    }
+
+    main {
+        padding: 20px; /* Reduza o preenchimento do conteúdo principal */
+        min-width: auto; /* Remova a largura mínima */
+        margin-right: 20px; /* Ajuste a margem direita */
+    }
+
+    .clientes {
+        flex-direction: column; /* Alinhe os clientes verticalmente em dispositivos móveis */
+        margin: 20px; /* Ajuste a margem geral */
+    }
+
+    .box1, .box2, .box3 {
+        margin: 20px 0; /* Ajuste a margem entre os boxes */
+    }
+
+    .img {
+        width: 80px; /* Reduza o tamanho da imagem */
+        top: -50px; /* Ajuste a posição da imagem */
+    }
+
+    aside h1 {
+        font-size: 30px; /* Reduza o tamanho do título dos clientes */
+        margin: 100px 0 -20px 20px; /* Ajuste as margens do título */
+    }
+
+    aside img {
+        width: 60px; /* Reduza o tamanho da imagem do cliente */
+        height: 60px;
+    }
+
+    #Contato img {
+        height: 60px; /* Reduza o tamanho do ícone de contato */
+        width: 60px;
+        margin: 20px;
+    }
+}
+
 
 
 
